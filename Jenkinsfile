@@ -3,10 +3,11 @@ pipeline {
 
     stages {
         stage('Build') {
-            steps {
-                sh './mvnw clean package'
-            }
-        }
+    steps {
+        sh 'chmod +x mvnw'
+        sh './mvnw clean package'
+    }
+}
 
         stage('Docker Build') {
             steps {
