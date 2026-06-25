@@ -1,7 +1,6 @@
 pipeline {
 agent any
 
-```
 environment {
     IMAGE_NAME = "dineshjanaparapu/devsecops-demo"
 }
@@ -78,7 +77,6 @@ stages {
         }
     }
 }
-```
 
 }
 
